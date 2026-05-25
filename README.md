@@ -67,21 +67,26 @@
 ## Развёртывание проекта
 
 ### На Unix-like
-```
+```bash
+git clone https://github.com/k1lledbydrones/golden-fish-planner.git
+cd golden-fish-planner
 cp .env.example .env # заполните токен бота в файле .env
+python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 python -m bot.main
 ```
-
 ### На Windows
-Скопируйте файл `.env.example` в `.env` и заполните токен бота в файле `.env`. Затем выполните следующие команды:
 ```
-venv\Scripts\activate
+git clone https://github.com/k1lledbydrones/golden-fish-planner.git
+cd golden-fish-planner
+```
+Скопируйте содержимое файла `.env.example` в `.env` и заполните токен бота в файле `.env`. Затем выполните следующие команды:
+```
+.venv\Scripts\activate
 pip install -r requirements.txt
 python -m bot.main
 ```
-
 
 ## Откуда скопировали код
 Код проекта опирается на примеры и документацию следующих источников:
