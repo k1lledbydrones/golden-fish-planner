@@ -44,7 +44,6 @@
 │       ├── __init__.py
 │       ├── time_parse.py
 │       └── timezone.py
-├── bot.db
 ├── LICENSE
 ├── README.md
 └── requirements.txt
